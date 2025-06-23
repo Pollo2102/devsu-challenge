@@ -9,4 +9,4 @@ RUN apt update -y &&\
 
 EXPOSE 8000
 
-CMD [ "npm", "start" ]
+CMD [ "npm", "run", "start" ]
