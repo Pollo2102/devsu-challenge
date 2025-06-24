@@ -63,7 +63,7 @@ To create a user, the endpoint **/api/users** must be consumed with the followin
 }
 ```
 
-If the response is successful, the service will return an HTTP Status 200 and a message with the following structure:
+If the response is successful, the service will return an HTTP Status 201 and a message with the following structure:
 
 ```json
 {
