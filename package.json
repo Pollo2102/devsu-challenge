@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "jest"
+    "test": "NODE_ENV=test node --experimental-vm-modules node_modules/.bin/jest"
   },
   "jest": {
     "transform": {

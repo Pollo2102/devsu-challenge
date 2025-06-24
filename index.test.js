@@ -1,8 +1,14 @@
-import { app, server } from '.'
+import { app, server } from './index.js'
 import request from 'supertest'
 import User from './users/model.js'
-import sequelize from './shared/database/database'
+import sequelize from './shared/database/database.js'
 import { Sequelize } from 'sequelize'
+import { jest } from '@jest/globals'
+import { fileURLToPath } from 'url'
+import path from 'path'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 describe('User', () => {
     let data
