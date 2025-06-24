@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "NODE_ENV=test node --experimental-vm-modules node_modules/.bin/jest"
+    "test": "NODE_ENV=test node --experimental-vm-modules node_modules/.bin/jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint ."
   },
   "jest": {
     "transform": {
