@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "NODE_ENV=test node --experimental-vm-modules node_modules/.bin/jest",
-    "test:coverage": "jest --coverage",
+    "test:coverage": "NODE_ENV=test node --experimental-vm-modules node_modules/.bin/jest --coverage",
     "lint": "eslint ."
   },
   "jest": {
