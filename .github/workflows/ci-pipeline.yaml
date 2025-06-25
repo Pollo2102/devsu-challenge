@@ -52,7 +52,7 @@ jobs:
       - name: Push Docker image
         run: docker push $IMAGE_NAME:latest
 
-      - name: (Optional) Vulnerability scan with Trivy
+      - name: Vulnerability scan with Trivy
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: diego2102/devsu-challenge:latest
